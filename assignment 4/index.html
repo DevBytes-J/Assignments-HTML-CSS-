@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HuckleBerry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Parkinsans:wght@300..800&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before *::after {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Roboto", serif;
+      }
+
+      span {
+        color: rgb(23, 160, 80);
+        font-weight: bold;
+      }
+      .content{
+         width: 35%;
+      }
+      .p2{
+        width: 80%;
+      }
+      .section-1{
+        border:none;
+        width: 80%;
+        margin-bottom:70px ;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      .section-2{
+        border-top: 3px solid #999999;
+        background-color: #666666;
+        width: 100%;
+      }
+      .intro{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .back3{ 
+        width: 45%;
+        padding-top: 50px;
+        padding-right: 20px;
+        background-color: #ffffff;
+        border-bottom:3px solid  #999999;
+        margin: 100px auto;
+        padding-left: 20px;
+        position: relative;
+      }
+      .rel{
+        width: 45%;
+        background-color: #FFBF00;
+        padding: 10px 22px;
+        font-weight: bold;
+        border-bottom:3px solid #CC9900;
+        position: absolute;
+        left: -5px;
+        top:3px ;
+      }
+     @media(max-width:768px){
+       body{
+        height: 800px;
+       }
+       .section-1{
+        justify-content: flex-start;
+       }
+       .content{
+        width: 60%;
+        padding-left:20px ;
+       }
+       .intro{
+        justify-content: flex-start;
+       }
+       .back3{
+          margin: 100px 0;
+          width: 80%;
+       }
+     }
+     @media (max-width: 390px){
+      body{
+        height: 0px;
+      }
+       .content{
+        width: 100%;
+       }
+       .rel{
+        width: 80%;
+       }
+    }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section class="section-1">
+          <div class="content">
+            <h1>Huckleberry</h1>
+            <p class="p1">
+              An avant-garde agency focused on connecting
+              <span>passion</span> with <span>logistics</span>.
+            </p>
+            <p class="p2">A better way to solve the problems of tomorrow.</p>
+          </div>
+        </div>
+      </section>
+      <div class="back"></div>
+      <section class="section-2">
+        <div class="intro">
+          <div class="back3">
+            <div class="rel">Wealth comes from operations</div>
+            <p>
+                No modern business can thrive without developing a specialization in operations. Huckleberry has helped dozens of companies, from Fortune 50 monoliths to fast-growing Bay Area startups, achieve their goals and meet their KPIs by leveraging our extensive network of logistics experts.
+            </p>
+            <p>Huckleberry was established in 2003 to help ambitious businesses discover their true potential. If that resonates, let's chat!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

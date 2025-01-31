@@ -1,0 +1,30 @@
+ :root{
+    --primary-color:#0065FE;
+ }
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content:space-evenly;
+}
+/* .head-logo{
+} */
+/* .head-lists{
+
+} */
+ul{
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+.head-right{
+    display: flex;
+    text-align: center;
+}
+.head-right button{
+    padding:10px;
+}
