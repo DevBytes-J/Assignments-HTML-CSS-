@@ -114,6 +114,7 @@ ul a{
 }
 .group-2-img img {
   width: 100%;
+  display: block;
 }
 .sub-group-2{
   display: flex;

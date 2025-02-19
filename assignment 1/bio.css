@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
   
@@ -8,6 +10,29 @@ body{
    max-width: 1440px;
    font-family: Oswald, Helvetica, Arial, sans-serif;
 }
+nav{
+    background-color: #bbbbbb;
+    width: 60%;
+    padding: 20px;
+    margin:2rem auto;
+    border-radius: 10px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+  }
+li:hover a{
+ color: #fff;
+ background-color: #5c5c5c;
+ padding: 10px;
+ border-radius: 30px;
+}
+ul a{
+    text-decoration: none;
+  }
 a{
     color: #000;
 }
@@ -19,17 +44,20 @@ hr{
     font-size: 2rem;
     margin: 20px;
 }
+.icons p{
+    margin-bottom: 20px;
+}
+.icons{
+    margin-bottom: 20px;
+}
 .icons a:hover{
     cursor: pointer;
-    padding: 10px;
-    background-color: #d7d2cc;
+    color: #fff;
+    background-color: #5c5c5c;
+    padding: 10px 14px;
     border-radius: 10px;
 }
 
-ul{
-  display: flex;
-  gap: 20px;
-}
 .head-2{
    text-align: center;
    width: 100%;
@@ -74,11 +102,9 @@ p{
 .art{
     background-color: #c9c9c9;
     width: 80%;
-     /* max-width:1100px; */
      margin: auto;
-     /* border-radius: 10px; */
      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-     padding: 3%;
+     padding: 5%;
      border-radius: 5px;
      text-align: center;
 }
@@ -88,18 +114,10 @@ p{
      align-items: center;
      column-gap: 20px;
     }
-/* .block{
-    display: block;
-} */
-/* .fex-cont{
-    display: flex;
-    column-gap: 20px;
-    width: 100%;
-} */
+
 .f1{
     border-radius: 8px;
     padding: 20px;
-    /* width: 90%; */
 }
 .f1:hover{
     cursor: pointer;
@@ -107,10 +125,8 @@ p{
     background-color: #a0a0a0;
 }
 .f2{
- 
     border-radius: 8px;
     padding: 20px;
-    /* width: 90%; */
 }
 .f2:hover{
     cursor: pointer;
@@ -146,10 +162,14 @@ p{
 }
 .goal-cont{
  padding: 20px;
+ margin: 20px;
 }
 .goal-1{
     border-radius: 8px;
     width: 100%;
+}
+.goal-2{
+    padding: 10px 0;
 }
 .sub-goal2{
     margin-left: 20px;
@@ -171,7 +191,12 @@ footer a{
     color: #000;
     text-decoration: none;
 }
-@media (max-width: 700px){
+@media (max-width: 800px){
+    ul{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
     .bio{
         align-items: center;
         justify-content: center;
